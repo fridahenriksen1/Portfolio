@@ -1,0 +1,83 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: auto;
+  min-height: 100vh;
+  background-color: #F6EEE3;
+}
+.container .main-header {
+  display: flex;
+  justify-content: right;
+}
+.container .main-header .menu-main {
+  display: flex;
+  flex: 0 40%;
+}
+.container .main-header .menu-main .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1 auto;
+}
+.container .main-header .menu-main .menu .menu-item .menu-link {
+  color: black;
+}
+.container .switchBtn {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+.container .switchBtn input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.container .switchBtn input:checked + .slider {
+  background-color: black;
+}
+.container .switchBtn input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: beige;
+}
+.container .switchBtn input:focus + .slider {
+  box-shadow: 0 0 2px beige;
+}
+.container .switchBtn .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: beige;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+.container .switchBtn .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: beige;
+  border-radius: 50%;
+  transition: 0.4s;
+}/*# sourceMappingURL=style.css.map */
